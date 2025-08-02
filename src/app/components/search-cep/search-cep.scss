@@ -1,0 +1,36 @@
+@mixin FlexCenter {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+  max-width: 800px;
+  margin:  auto;
+  padding: 10px;
+  background-color: aliceblue;
+  border-bottom: 1px dashed
+}
+
+.main__title, p {
+  border-radius: 0 0 10px 10px;
+  font-size: 20px;
+  font-family: Montserrat, Helvetica Neue, sans-serif;
+  font-style: italic;
+}
+
+section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 10px;
+  background-color: aliceblue;
+  border: 1px  dashed
+}
+
+.mat-grid-tile{
+  padding: 50px;
+  margin: 0;
+}
+
+
+

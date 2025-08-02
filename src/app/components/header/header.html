@@ -1,0 +1,63 @@
+<nav>
+    <div class="nav__menu">
+        <mat-grid-list cols="3" rowHeight="70px" class="nav__grid-menu" gutterSize="0">
+            <mat-grid-tile>
+                <div class="tile-content"><img src="/src/assets/images/logo-sccon.svg"></div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div class="tile-content">
+                    <section>
+                        <div class="example-label"></div>
+                        <div class="example-button-row">
+                            <button matButton="elevated" routerLink="/home" routerLinkActive="active-link">Home</button>
+                        </div>
+                    </section>
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div class="tile-content">
+                    <section>
+                        <div class="example-label"></div>
+                        <div class="example-button-row">
+                            <button matButton="elevated" routerLink="/list-cep"
+                                routerLinkActive="active-link">Endereços</button>
+                        </div>
+                    </section>
+                </div>
+            </mat-grid-tile>
+        </mat-grid-list>
+        <div class="nav__sub-menu">
+            <mat-grid-list cols="3" rowHeight="70px" class="nav__grid-sub-menu">
+                <mat-grid-tile>
+                    <div class="tile-content"><a href="/"></a></div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div class="tile-content"><a href="/"></a></div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div class="tile-content">
+                        <section>
+                            <div class="example-label"></div>
+                            <div class="example-button-row">
+                                <button matButton="elevated" routerLink="/search-cep"
+                                    routerLinkActive="active-link">Buscar
+                                    endereços</button>
+                            </div>
+                        </section>
+                    </div>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </div>
+    </div>
+
+
+    <!-- <mat-slide-toggle>Toggle me!</mat-slide-toggle>
+    <img src="" alt="">
+    <div class="nav__menu">
+        <a href="/">Home</a>
+        <a href="/">Endereços</a>
+    </div>
+    <div class="nav__sub-menu">
+         <a href="">Buscar Endereços</a>
+    </div> -->
+</nav>

@@ -1,0 +1,69 @@
+@use "sass:color";
+$primaryColor: #670000;
+$SecundaryColor: #d7dbdd;
+
+@mixin FlexCenter {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// img[alt="logo-sccon"]  {
+//     width: 200px;
+//     height: 200px;
+// }
+
+
+.example-button-row {
+  max-width: 600px;
+}
+.example-button-row .mat-mdc-button-base {
+  font-family: Montserrat, Helvetica Neue, sans-serif;
+  color: black;
+  margin: 8px 8px 8px 0;
+  width: 200px;
+  background-color: $SecundaryColor;
+  &:hover {
+    background-color: color.adjust($SecundaryColor, $lightness: -6%);
+  }
+}
+
+.nav__sub-menu {
+  &:has(button[routerLink="/search-cep"].active-link) {
+    display: none;
+  }
+}
+
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav__grid-menu {
+  background: $primaryColor;
+  padding: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+// .tile-content {
+//   // margin: 0;
+//   // padding: 0;
+// }
+
+.nav__grid-sub-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #D7DBDD;
+}
+
+// .tile-content {
+//   // margin: 0;
+//   // padding: 0;
+// }

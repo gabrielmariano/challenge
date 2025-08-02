@@ -1,0 +1,33 @@
+<main>
+    <div class="main__title">
+        <p>Busca de Endereços</p>
+    </div>
+</main>
+<section>
+<mat-grid-list cols="1" rowHeight="100px">
+  <mat-grid-tile>
+    <mat-form-field appearance="outline">
+      <mat-label>Digite o CEP</mat-label>
+      <input matInput 
+             [formControl]="cepFormControl"
+             placeholder="00000-000"
+             mask="00000-000">
+      <mat-error *ngIf="cepFormControl.hasError('required')">
+        CEP é obrigatório
+      </mat-error>
+      <mat-error *ngIf="cepFormControl.hasError('pattern') || cepFormControl.hasError('invalidCep')">
+        Digite um CEP válido (8 dígitos)
+      </mat-error>
+      
+    </mat-form-field>
+      <button mat-raised-button 
+            color="primary"
+            (click)="buscarCep()"
+            [disabled]="!cepFormControl.valid" style="width: 100px; margin:30px">
+      Buscar
+    </button>  
+  </mat-grid-tile>
+  <mat-grid-tile>
+  </mat-grid-tile>
+</mat-grid-list>
+</section>
