@@ -1,27 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { App } from './app';
+import { Header } from './components/header/header';
+import { routes } from './app.routes';
 
 @NgModule({
-  declarations: [
-  ],
+  declarations: [App, Header],
   imports: [
-    App,
     BrowserModule,
     HttpClientModule,
-    FormsModule,
-    ReactiveFormsModule,
+    RouterModule.forRoot(routes),
+    MatGridListModule,
     MatButtonModule,
-    MatInputModule,
-    MatFormFieldModule, App
   ],
   providers: [],
   bootstrap: [App]
 })
-export class AppModule { }
+export class AppModule {}

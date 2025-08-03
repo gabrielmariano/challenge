@@ -1,26 +1,9 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { FormControl, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {MatButtonModule} from '@angular/material/button';
+import { FormControl, Validators } from '@angular/forms';
 
 
 @Component({
-  standalone: true,
   selector: 'app-search-cep',
-  imports: [
-    CommonModule,
-    RouterModule,
-    MatGridListModule,
-    FormsModule,
-    MatFormFieldModule,
-    MatInputModule,
-    ReactiveFormsModule,
-    MatButtonModule
-  ],
   templateUrl: './search-cep.html',
   styleUrls: ['./search-cep.scss']
 })
