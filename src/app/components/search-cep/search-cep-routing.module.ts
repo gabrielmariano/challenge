@@ -10,8 +10,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class SearchCepRoutingModule {
-  static forChild(arg0: never[]): any[] | import("@angular/core").Type<any> | import("@angular/core").ModuleWithProviders<{}> {
-    throw new Error('Method not implemented.');
-  }
-}
+export class SearchCepRoutingModule {}

@@ -13,8 +13,8 @@ export const routes: Routes = [
   },
   {
     path: 'list-cep',
-    loadComponent: () =>
-      import('./components/list-cep/list-cep').then((m) => m.ListCep),
+    loadChildren: () =>
+      import('./components/list-cep/list-cep.module').then((m) => m.ListCepModule),
   },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', redirectTo: 'home' }

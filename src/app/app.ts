@@ -1,13 +1,8 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
-import { Header } from './components/header/header';
-import { HttpClientModule } from '@angular/common/http';
-
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `<router-outlet></router-outlet>`,
-  imports: [RouterOutlet]
+  templateUrl: './app.html',
+  styleUrls: ['./app.scss'],
 })
 export class App {}
